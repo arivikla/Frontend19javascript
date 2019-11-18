@@ -2,13 +2,13 @@
 git init
 
 # Lägg till en github-repository (görs bara en gång)
-git remote add origin https://github.com/ari.vikla@gmail.com.git
+git remote add origin https://github.com/arivikla/Frontend19javascript.git
 
 # För att lägga till nya filer
 git add .
 
 # För att spara nya filer och ändrade filer
-git commit -m "Ett vettigt meddelande ex lektion 1"
+git commit -m "lektion 1"
 
 # För att synka den lokala giten med din github
 git push -u origin master
@@ -16,8 +16,8 @@ git push -u origin master
 ------------------------------------------------
 
 # När vi vill hämta hem ett helt nytt projekt (Om vi inte har sedan tidigare)
-git clone https://github.com/ari.vikla@gmail.com.git
+git clone https://github.com/arivikla/Frontend19javascript.git
 
 # När vi vill hämta de senaste uppdateringarna (Vi har gjort projektet tidigare)
-git pull https://github.com/ari.vikla@gmail.com.git
+git pull https://github.com/arivikla/Frontend19javascript.git
 
