@@ -53,6 +53,21 @@
             console.log(letName);
             console.log(constName);
 
+            JavaScript:     camelCase   firstName
+            C#              Pascal      FirstName
+
+
+            let myName = 'Ari Vikla';
+
+            //Hitta antal tecken i en text
+            console.log(myName.length);
+
+            //Konvertera till versaler
+            console.log(myName.toUpperCase());
+
+            //Konvertera till gemener
+            console.log(myName.toLowerCase());
+
 
 */
 
