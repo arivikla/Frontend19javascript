@@ -68,6 +68,24 @@
             //Konvertera till gemener
             console.log(myName.toLowerCase());
 
+            Object = Klasser
+            Object = Json (JavaScript Object Notation)
+
+            let user = {
+                firstName: 'Ari',
+                lastName: 'Vikla',
+                age: 35,
+                adress: {
+                    street: Syringsvägen',
+                    nr: 3,
+                    zipCode: '724 76'
+                    city: 'Västerås'
+                },
+                phoneNumbers: [
+                    '0708-140986'
+                ]
+            };
+
 
 */
 
