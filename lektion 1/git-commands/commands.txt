@@ -8,7 +8,7 @@ git remote add origin https://github.com/arivikla/Frontend19javascript.git
 git add .
 
 # För att spara nya filer och ändrade filer
-git commit -m "lektion 1"
+git commit -m "Ett vettigt meddelande ex lektion 1"
 
 # För att synka den lokala giten med din github
 git push -u origin master
