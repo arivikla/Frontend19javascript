@@ -83,7 +83,8 @@
                 },
                 phoneNumbers: [
                     '0708-140986'
-                ]
+                ],
+                isActive=true
             };
 
 
