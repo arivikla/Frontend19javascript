@@ -1,0 +1,35 @@
+  
+{
+	// Place your snippets for html here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+
+	"HTML5 PRO TEMPLATE": {
+		"prefix": "HTML5 Pro Template",
+		"description": "HTML5 Template with Font Awesome Pro",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang=\"en\">",
+			"<head>",
+			"    <meta charset=\"UTF-8\">",
+			"    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+			"    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">",
+			"    <title>$1</title>",
+			"    ",
+			"    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">",
+			"    <script src=\"https://kit.fontawesome.com/9272ac0a4d.js\"></script>",
+			"    <link rel=\"stylesheet\" href=\"custom.css\">",
+			"</head>",
+			"<body>",
+			"    $0",   
+			"    ",
+			"    <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\"></script>",
+			"    <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\"></script>",
+			"    <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\"></script>",
+			"    <script src=\"script.js\"></script>",
+			"</body>",
+			"</html>"
+		]	
+	}
+}
