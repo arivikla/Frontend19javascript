@@ -66,20 +66,21 @@
                 </div>
             </div>
             <div class="form-row bg-info">
-                <div class="form-group col-md-12">
+                <div class="form-group col-md-6">
                     <input id="interests" type="text" class="form-control" required placeholder="Interests">
                     <div class="invalid-feedback">
                         Please enter your interests.
                     </div>
                 </div>
-            </div>
-            <div class="form-row bg-info">
+
                 <div class="form-group col-md-6">
                     <input id="email" type="text" class="form-control" required placeholder="Email">
                     <div class="invalid-feedback">
                         Please enter a valid email address.
                     </div>
                 </div>
+            </div>
+            <div class="form-row bg-info">
                 <div class="form-group col-md-6">
                     <select id="gender" class="form-control">
                         <option value="gender">Gender - optional</option>
@@ -87,10 +88,8 @@
                         <option value="female">Female</option>
                     </select>
                 </div>
-            </div>
-            <div class="form-row bg-info">
                 <div class="form-group col-md-6">
-                    <input id="psw" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    <input id="psw" type="password" class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                         title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
                         required placeholder="Password">
                 </div>
@@ -114,9 +113,7 @@
 
     </div>
     </form>
-    </div>   
-
-
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>

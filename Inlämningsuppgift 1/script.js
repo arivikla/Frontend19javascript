@@ -16,6 +16,7 @@ $(function() {
       isEmpty(id);
   });
 
+  //Email
   function ValidateEmail(email) 
   {
    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test($('#email').val()))
@@ -27,43 +28,15 @@ $(function() {
       $('#email').addClass('is-invalid')
       $('#email').focus();
       return (false)
-  }        
-
-  $('#regForm').submit((e) => {
-      e.preventDefault();
-
-      isEmpty('#firstName');
-      isEmpty('#lastName');
-      isEmpty('#address');
-      isEmpty('#zipcode');
-      isEmpty('#city');
-      isEmpty('#country');    
-      isEmpty('#interests');              
-      ValidateEmail()     
-
-      location.replace("valideringklarsida.html")
-      
-      
-
-  })
+  }    
 
 //Password
-
 let myInput = document.getElementById("psw");
 let letter = document.getElementById("letter");
 let capital = document.getElementById("capital");
 let number = document.getElementById("number");
 let length = document.getElementById("length");
 
-// When the user clicks on the password field, show the message box
-myInput.onfocus = function() {
-document.getElementById("message").style.display = "block";
-}
-
-// When the user clicks outside of the password field, hide the message box
-myInput.onblur = function() {
-document.getElementById("message").style.display = "none";
-}
 
 // When the user starts to type something inside the password field
 myInput.onkeyup = function() {
@@ -105,6 +78,22 @@ if(myInput.value.length >= 8) {
   length.classList.remove("valid");
   length.classList.add("invalid");
 }
-}   
+} 
+
+$('#regForm').submit((e) => {
+  e.preventDefault();
+
+  isEmpty('#firstName');
+  isEmpty('#lastName');
+  isEmpty('#address');
+  isEmpty('#zipcode');
+  isEmpty('#city');
+  isEmpty('#country');    
+  isEmpty('#interests');               
+  ValidateEmail();  
+
+  location.replace("valideringklarsida.html");   
+
+})
 
 });
