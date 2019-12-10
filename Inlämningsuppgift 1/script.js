@@ -17,12 +17,12 @@ $(function() {
   });
 
   //Email
-  function ValidateEmail(email) 
-  {
+  function ValidateEmail(email) {    
    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test($('#email').val()))
     {
       $('#email').removeClass('is-invalid')
       $('#email').addClass('is-valid') 
+      location.replace("valideringklarsida.html");
       return (true)
     }
       $('#email').addClass('is-invalid')
@@ -87,12 +87,9 @@ $('#regForm').submit((e) => {
   isEmpty('#lastName');
   isEmpty('#address');
   isEmpty('#zipcode');
-  isEmpty('#city');
-  isEmpty('#country');    
-  isEmpty('#interests');               
-  ValidateEmail();  
-
-  location.replace("valideringklarsida.html");   
+  isEmpty('#city');      
+  isEmpty('#textarea');               
+  ValidateEmail();      
 
 })
 
