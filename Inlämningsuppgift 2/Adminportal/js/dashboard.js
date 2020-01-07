@@ -342,7 +342,7 @@
     fetch('http://inlupp-fa.azurewebsites.net/api/downloads').then(res => res.json())
       .then(data => {
 
-        document.getElementById('downloads-offlineAmount').innerHTML = `${data.offlineAmount}`;
+        document.getElementById('downloads-offlineAmount').innerHTML = data[0].offlineAmount;
 
 
         if ($('#offlineProgress').length) {
@@ -397,7 +397,7 @@
     fetch('http://inlupp-fa.azurewebsites.net/api/downloads').then(res => res.json())
       .then(data => {
 
-        document.getElementById('downloads-onlineAmount').innerHTML = `${data.onlineAmount}`;
+        document.getElementById('downloads-onlineAmount').innerHTML = data[1].onlineAmount;
 
         if ($('#onlineProgress').length) {
           var bar = new ProgressBar.Circle(onlineProgress, {
